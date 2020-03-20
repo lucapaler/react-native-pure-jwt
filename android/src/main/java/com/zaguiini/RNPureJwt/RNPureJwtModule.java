@@ -160,7 +160,7 @@ public class RNPureJwtModule extends ReactContextBaseJavaModule {
         JwtBuilder constructedToken = Jwts.builder()
                 .signWith(SignatureAlgorithm.forName(algorithm), this.toBase64(secret))
                 .setHeaderParam("alg", algorithm)
-                .setHeaderParam("typ", "JWT");
+                .setHeaderParam("typ", "JWT")
                 .setHeaderParam("cty", "twilio-fpa;v=1");
 
         Set<Map.Entry<String, Object>> entries = claims.toHashMap().entrySet();

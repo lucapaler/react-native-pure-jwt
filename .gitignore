@@ -42,6 +42,8 @@ buck-out
 .gradle
 local.properties
 *.iml
+.project
+org.eclipse.buildship.core.prefs
 
 # Node
 node_modules
