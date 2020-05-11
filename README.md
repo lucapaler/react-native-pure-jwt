@@ -58,7 +58,10 @@ Now you know (just about) all you need to know about JWTs. (Credits: [jwtk/jjwt]
 Install the package with:
 `yarn add react-native-pure-jwt`
 
-And then run:
+If your React Native version supports autolinking, you should only run `pod install` on `ios` folder and you'll be good to go.
+
+If not...
+
 `react-native link react-native-pure-jwt`
 
 **The linking process on the iOS version works with Cocoapods**
@@ -109,7 +112,7 @@ include ':app'
 You need to use Cocoapods at the moment. Open your `Podfile` and insert the following line in your main target:
 
 ```ruby
-pod 'RNPureJwt', :podspec => '../node_modules/react-native-pure-jwt/RNPureJwt.podspec'
+pod 'react-native-pure-jwt', :podspec => '../node_modules/react-native-pure-jwt/react-native-pure-jwt.podspec'
 ```
 
 Then run `pod install` and open your `.xcworkspace`
